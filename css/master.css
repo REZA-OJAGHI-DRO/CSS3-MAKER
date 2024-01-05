@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: font-1;
+  src: url("../../src/font/JosefinSans-VariableFont_wght.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: font-2;
+  src: url("../font/Caveat-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: font-3;
+  src: url("../font/BebasNeue-Regular.ttf") format("opentype");
+}
+
+@font-face {
+  font-family: font-4;
+  src: url("../font/IRANSans.ttf") format("opentype");
+}
+
+
+.gridArea {
+  grid-area: 1/1/2/2;
+}
+
+.bg-size {
+  background-size: 100% 100%;
+}
+
+ .style1{
+font-style: normal;
+ }
+ .style2{
+  font-style: italic;
+ }
+ .fontWeight1{
+  font-weight: normal;
+ }
+ .fontWeight2{
+  font-weight: bold;
+ }
+ .fontWeight3{
+  font-weight: lighter;
+ }
+.boxShadow1 {
+  &:hover {
+    >div {
+      box-shadow: 0;
+      box-shadow: 0 0 0px 5px rgba(48, 48, 248, 0.538);
+    }
+  }
+}
